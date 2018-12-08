@@ -13,14 +13,14 @@ fn main() {
             _count +=1;
             if _candidate < _upper_divisor {vec.push(_candidate);}
         }
-        _candidate +=2;
+        _candidate +=2; // skip odd numbers
         if _candidate >=_limit { break; }
         // second half of unroled loop
         if check_for_prime(_candidate, &vec) {
             _count +=1;
             vec.push(_candidate);
         }
-        _candidate +=4; // skip every second odd number as it devides by 5
+        _candidate +=4; // skip every second odd number as it devides by 3
         if _candidate >=_limit { break; }
     }
     println!("All primes smaller than {0} computed in {1} seconds",_limit, now.elapsed().as_secs());
