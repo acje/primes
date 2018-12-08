@@ -1,0 +1,7 @@
+[package]
+name = "prime"
+version = "0.1.0"
+authors = ["Anders Jensen <anders.c.jensen@gmail.com>"]
+edition = "2018"
+
+[dependencies]
