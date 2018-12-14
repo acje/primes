@@ -2,10 +2,10 @@ use std::time::Instant;
 
 fn main() {
     let now = Instant::now();
-    let _limit = 10_000_000u64;
-    let mut vec = vec![2, 3];
-    let mut _count = 2u64;
-    let mut _candidate = 5u64;
+    let _limit = 100_000_000u64;
+    let mut vec = vec![2, 3, 5, 7];
+    let mut _count = 4u64;
+    let mut _candidate = 11u64;
     let _upper_divisor = (_limit as f64).sqrt() as u64 + 1;
 
     loop {
@@ -39,7 +39,7 @@ fn main() {
 
 fn check_for_prime(_pc: u64, vec: &[u64]) -> bool {
     let _upper_limit = (_pc as f64).sqrt() as u64 + 1;
-    let mut vec_pos = 0usize;
+    let mut vec_pos = 2usize;
     loop {
         if _pc % *&vec[vec_pos] == 0 {
             return false;
