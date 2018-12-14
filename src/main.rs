@@ -2,7 +2,7 @@ use std::time::Instant;
 
 fn main() {
     let now = Instant::now();
-    let _limit = 100_000_000u64;
+    let _limit = 10_000_000u64;
     let mut vec = vec![2, 3, 5, 7];
     let mut _count = 4u64;
     let mut _candidate = 11u64;
